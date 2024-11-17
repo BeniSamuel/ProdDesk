@@ -1,0 +1,30 @@
+<div>
+    <nav class=" flex flex-row justify-between px-20 py-5 bg-black">
+        <div class=" text-white font-poppins">ShProduct</div>
+        <ul class=" flex flex-row gap-12 text-white font-poppins">
+            <li routerLink="/">Home</li>
+            <li><a [routerLink]="['/product']" class=" font-poppins">Product</a></li>
+            <li class=" font-poppins">About</li>
+        </ul>
+        <div class=" text-white font-poppins">Login</div>
+    </nav>
+    <div class=" flex flex-row justify-center py-5">
+        <form class=" h-96 bg-slate-100 px-12 flex flex-col gap-4 py-5">
+            <div class=" font-poppins text-xl font-medium">Create Product</div>
+            <input type="text" placeholder="Name" class=" bg-transparent outline-none border-2 border-black placeholder:font-poppins h-12 w-80 rounded-lg pl-4 font-poppins">
+            <input type="text" placeholder="Description" class=" bg-transparent outline-none border-2 border-black placeholder:font-poppins h-12 w-80 rounded-lg pl-4 font-poppins">
+            <input type="text" placeholder="Price" class=" bg-transparent outline-none border-2 border-black placeholder:font-poppins h-12 w-80 rounded-lg pl-4 font-poppins">
+            <input type="text" placeholder="Quantity" class=" bg-transparent outline-none border-2 border-black placeholder:font-poppins h-12 w-80 rounded-lg pl-4 font-poppins">
+
+            <div>
+                <input type="submit" value="Submit" class=" bg-black text-white font-poppins w-80 h-12 rounded-lg" onclick="handleClick()">
+            </div>
+        </form>
+    </div>
+    <script>
+        function handleClick() {
+            alert("hi")
+        }
+    </script>
+</div>
+<router-outlet></router-outlet>

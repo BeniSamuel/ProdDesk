@@ -1,0 +1,31 @@
+<div>
+    <nav class=" flex flex-row justify-between px-20 py-5 bg-black">
+        <div class=" text-white font-poppins">ShProduct</div>
+        <ul class=" flex flex-row gap-12 text-white font-poppins">
+            <li routerLink="/">Home</li>
+            <li><a [routerLink]="['/product']" class=" font-poppins">Product</a></li>
+            <li class=" font-poppins">About</li>
+        </ul>
+        <div class=" text-white font-poppins">Login</div>
+    </nav>
+    <div class=" flex flex-row justify-center py-4">
+        <div class=" flex flex-row gap-2 justify-center items-center bg-slate-300 py-2 px-2 rounded-lg">
+            <div class=" bg-black h-12 w-1 rounded-xl"></div>
+            <p class=" font-poppins">Welcome to the product management system with angular and nestjs👌👌👌👌</p>
+        </div>
+    </div>
+    <div>
+        <div class=" flex flex-col gap-4 pl-16 py-4">
+            <p class=" font-poppins">What we offer: </p>
+            <ol class=" flex flex-row gap-8 justify-center">
+                <li class=" font-poppins"><a [routerLink]="['/create-product']">Create Product</a></li>
+                <li class=" font-poppins">Update Product</li>
+                <li class=" font-poppins">Delete Product</li>
+                <li class=" font-poppins">View Product</li>
+                <li class=" font-poppins">View Products</li>
+                <li class=" font-poppins">Search Product</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
