@@ -8,5 +8,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   templateUrl: './create-product.component.html',
 })
 export class CreateProductComponent {
-  
+  handleClick () {
+    console.log('Button Clicked!');
+    alert("Hello world")
+  }
 }
